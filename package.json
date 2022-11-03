@@ -6,7 +6,14 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "eslint": "eslint --ext .js --ext .jsx --ext .ts --ext .tsx",
+    "eslint:fix": "eslint --fix --ext .js --ext .jsx --ext .ts --ext .tsx",
+    "stylelint": "stylelint **/*.scss --custom-syntax postcss-scss",
+    "stylelintfix": "stylelint **/*.scss --fix --custom-syntax postcss-scss",
+    "prettier:check": "prettier --config .prettierrc --check \"**/*.{js,jsx,ts,tsx,css,scss,html}\"",
+    "prettier:write": "prettier --config .prettierrc --write \"**/*.{js,jsx,ts,tsx,css,scss,html}\"",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@types/node": "18.11.9",
@@ -15,6 +22,21 @@
     "next": "13.0.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "sass": "^1.55.0",
     "typescript": "4.8.4"
+  },
+  "devDependencies": {
+    "eslint": "^8.26.0",
+    "eslint-config-next": "13.0.1",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1",
+    "stylelint": "^14.14.0",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-standard": "^29.0.0",
+    "stylelint-config-standard-scss": "^6.0.0",
+    "stylelint-scss": "^4.3.0"
   }
 }

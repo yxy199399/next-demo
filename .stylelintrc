@@ -1,0 +1,25 @@
+{
+  "plugins": ["stylelint-scss"],
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-standard-scss",
+    "stylelint-config-rational-order"
+  ],
+  "rules": {
+    "indentation": 2,
+    "value-list-comma-newline-after": null,
+    "value-list-comma-newline-before": null,
+    "font-family-no-missing-generic-family-keyword": null,
+    "selector-pseudo-class-no-unknown": null,
+    "alpha-value-notation": null,
+    "color-function-notation": null,
+    "string-quotes": "double",
+    "comment-empty-line-before": null,
+    "function-no-unknown": null,
+    "at-rule-no-unknown": [
+      true,
+      { "ignoreAtRules": ["mixin", "extend", "content", "include"] }
+    ],
+    "property-no-unknown": null
+  }
+}
